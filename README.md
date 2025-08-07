@@ -1,21 +1,42 @@
 # EDA-football
-Link to the project - https://nbviewer.jupyter.org/github/PranavSureshBabu/EDA-football/blob/master/exploring-data-analysis-on-football.ipynb
-Content
-This dataset includes 41,586 results of international football matches starting from the very first official match in 1972 up to 2019. The matches range from FIFA World Cup to FIFI Wild Cup to regular friendly matches. The matches are strictly men's full internationals and the data does not include Olympic Games or matches where at least one of the teams was the nation's B-team, U-23 or a league select team.
 
-results.csv includes the following columns:
+<img width="1080" height="608" alt="image" src="https://github.com/user-attachments/assets/721a8fd8-23ce-45cc-b85a-df4c14c5ec49" />
 
-date - date of the match
-hometeam - the name of the home team awayteam - the name of the away team
-homescore - full-time home team score including extra time, not including penalty-shootouts awayscore - full-time away team score including extra time, not including penalty-shootouts
-tournament - the name of the tournament
-city - the name of the city/town/administrative unit where the match was played
-country - the name of the country where the match was played
-neutral - TRUE/FALSE column indicating whether the match was played at a neutral venue
-Note on team and country names:
-For home and away teams the current name of the team has been used. For example, when in 1882 a team who called themselves Ireland played against England, in this dataset, it is called Northern Ireland because the current team of Northern Ireland is the successor of the 1882 Ireland team. This is done so it is easier to track the history and statistics of teams.
+# INTRODUCTION
 
-For country names, the name of the country at the time of the match is used. So when Ghana played in Accra, Gold Coast in the 1950s, even though the names of the home team and the country don't match, it was a home match for Ghana. This is indicated by the neutral column, which says FALSE for those matches, meaning it was not at a neutral venue.
+This project performs Exploratory Data Analysis (EDA) on 41,586 international football matches from 1972 to 2019. The data spans FIFA World Cup, Wild Cup, and international friendlies, providing insights into trends like team performances, home advantage, and scoring patterns.
 
-Acknowledgements
-The data is gathered from several sources including but not limited to Wikipedia, fifa.com, rsssf.com and individual football associations' websites.
+## DATASET DESCRIPTION
+
+The dataset includes:
+
+- **Date** of match
+
+- **Home team** and **Away team** names
+
+
+- **Home/Away scores** (excluding penalty shootouts)
+
+- **Tournament name**
+
+- **City**, **Country**, and **Neutral venue indicator**
+
+- Notes on historical inconsistencies in country/team names
+
+## KEY INSIGHTS EXPLORED 
+
+- 🏟️ Does home advantage really exist in international football?
+
+- 📈 Which teams have the most consistent winning records?
+
+- 🔥 What are the average goals scored by home vs away teams?
+
+- 🌍 How are neutral venues affecting match results?
+
+## TECHNOLOGIES USED
+
+- Python (Jupyter Notebook)
+
+- Pandas
+
+- Matplotlib & Seaborn
